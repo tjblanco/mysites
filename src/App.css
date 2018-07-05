@@ -11,7 +11,6 @@
   display: none;
   cursor: pointer;
 }
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 70px;
@@ -19,24 +18,19 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 .App-header {
   background-color: #222;
   height: 80px;
-  padding: 0px;
   color: white;
   padding: 10px;
 }
-
 .App-title {
   font-size: 2em;
   text-align: center;
   width: 300px;
   display: inline-block;
   font-weight: 100;
-
 }
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -44,14 +38,22 @@
 
 /* Navigator styles */
 .nav_panel {
-  width: 300px;
+  width: 250px;
   background: #222;
   color: white;
   position: absolute;
   left: 0;
   height: 100%;
-  padding: 20px;
+  padding: 0 5px 0 20px;
   text-align: left;
   border-top: 1px solid #E22F37;
 }
 
+/* Google Maps*/
+.map {
+  left: 275px;
+  position: absolute;
+  right: 0px;
+  background: lightgray;
+  height: 100%;
+}

@@ -4,6 +4,7 @@ import './App.css';
 import menuIcon from './menu.svg'
 import './responsive.css'
 import SitesList from "./SitesList";
+import GoogleMap from "./GoogleMap"
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         </header>
           <body>
             <SitesList/>
+            <GoogleMap/>
           </body>
       </div>
     );

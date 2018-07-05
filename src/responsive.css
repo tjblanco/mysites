@@ -1,51 +1,76 @@
-@media screen and (max-width: 731px) {
+@media screen and (max-width: 800px) {
     .menu {
         height: 25px;
         position: absolute;
         left: 30px;
-        top: 25px;
+        top: 30px;
         display: inline;
     }
-
     .hidden {
         display: none;
     }
-
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
-        height: 50px;
+        height: 40px;
         display: inline-block;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: 20px;
     }
-
     .App-header {
         background-color: #222;
         height: 60px;
         color: white;
         padding: 5px;
+        padding-top:15px;
     }
-
     .App-title {
         font-size: 1.5em;
         text-align: center;
         width: 220px;
         display:inline-block;
         font-weight: 100;
-
+    }
+    .map {
+        left: 0px;
+        position: absolute;
+        right: 0px;
+        background: lightgray;
+        height: 100%;
+        z-index: -1;
     }
 }
 
 @media screen and (max-width: 450px) {
+    .App-header {
+        background-color: #222;
+        height: 60px;
+        color: white;
+        padding: 5px;
+        padding-top:15px;
+    }
+    .menu {
+        height: 25px;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        display: inline;
+    }
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
-        height: 50px;
+        height: 30px;
         display: inline-block;
         margin-right: auto;
-        margin-left: 45px;
+        margin-left: 20px;
     }
     .hidden {
         display: none;
     }
-
+    .map {
+        left: 0px;
+        position: absolute;
+        right: 0px;
+        background: lightgray;
+        height: 100%;
+        z-index: -1;
+    }
 }
