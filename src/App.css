@@ -19,10 +19,11 @@
   margin-right: auto;
 }
 .App-header {
-  background-color: #222;
+  background-color: #fffdd0;
   height: 80px;
-  color: white;
+  color: black;
   padding: 10px;
+  border-bottom: 1px solid #d73027;
 }
 .App-title {
   font-size: 2em;
@@ -39,14 +40,13 @@
 /* Navigator styles */
 .nav_panel {
   width: 250px;
-  background: #222;
-  color: white;
+  background: #fffdd0;
+  color: black;
   position: absolute;
   left: 0;
   height: 100%;
   padding: 0 5px 0 20px;
   text-align: left;
-  border-top: 1px solid #E22F37;
 }
 
 /* Google Maps*/

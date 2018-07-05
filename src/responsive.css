@@ -17,11 +17,12 @@
         margin-left: 20px;
     }
     .App-header {
-        background-color: #222;
+        background-color: #fffdd0;
         height: 60px;
-        color: white;
+        color: black;
         padding: 5px;
         padding-top:15px;
+        border-bottom: 1px solid #d73027;
     }
     .App-title {
         font-size: 1.5em;
@@ -42,11 +43,12 @@
 
 @media screen and (max-width: 450px) {
     .App-header {
-        background-color: #222;
+        background-color: #fffdd0;
         height: 60px;
-        color: white;
+        color: black;
         padding: 5px;
         padding-top:15px;
+        border-bottom: 1px solid #d73027;
     }
     .menu {
         height: 25px;
