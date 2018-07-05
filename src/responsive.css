@@ -1,0 +1,44 @@
+@media screen and (max-width: 731px) {
+    .menu {
+        height: 25px;
+        position: absolute;
+        left: 30px;
+        top: 25px;
+        display: inline;
+    }
+
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+        height: 50px;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .App-header {
+        background-color: #222;
+        height: 60px;
+        color: white;
+        padding: 5px;
+    }
+
+    .App-title {
+        font-size: 1.5em;
+        text-align: center;
+        width: 220px;
+        display:inline-block;
+        font-weight: 100;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+        height: 50px;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 45px;
+    }
+}
