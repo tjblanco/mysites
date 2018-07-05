@@ -13,9 +13,10 @@
 
 .App-header {
   background-color: #222;
-  height: 100px;
-  padding: 20px;
+  height: 80px;
+  padding: 0px;
   color: white;
+  padding: 10px;
 }
 
 .App-title {
@@ -23,6 +24,7 @@
   text-align: center;
   width: 220px;
   display:inline-block;
+
 }
 
 .App-intro {
