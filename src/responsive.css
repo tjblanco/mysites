@@ -7,6 +7,10 @@
         display: inline;
     }
 
+    .hidden {
+        display: none;
+    }
+
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
         height: 50px;
@@ -37,8 +41,11 @@
         animation: App-logo-spin infinite 20s linear;
         height: 50px;
         display: inline-block;
-        margin-left: auto;
         margin-right: auto;
         margin-left: 45px;
     }
+    .hidden {
+        display: none;
+    }
+
 }

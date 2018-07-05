@@ -1,12 +1,15 @@
 .App {
   text-align: center;
 }
+
+/* Header style */
 .menu {
   height: 50px;
   position: absolute;
   left: 30px;
   top: 25px;
   display: none;
+  cursor: pointer;
 }
 
 .App-logo {
@@ -29,16 +32,26 @@
   font-size: 2em;
   text-align: center;
   width: 300px;
-  display:inline-block;
+  display: inline-block;
   font-weight: 100;
 
-}
-
-.App-intro {
-  font-size: large;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/* Navigator styles */
+.nav_panel {
+  width: 300px;
+  background: #222;
+  color: white;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  padding: 20px;
+  text-align: left;
+  border-top: 1px solid #E22F37;
+}
+
