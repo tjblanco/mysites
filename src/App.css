@@ -50,6 +50,13 @@
   bottom: 0px;
 }
 
+select {
+  margin-top: 20px;
+  width: 230px;
+  font-size: 1em;
+
+}
+
 /* Google Maps*/
 .map {
   left: 275px;

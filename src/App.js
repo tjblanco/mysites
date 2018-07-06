@@ -26,6 +26,9 @@ class App extends Component {
             {lat: 41.403824, lng: 2.148031, title: 'El Petit Bangkok', class: 'Asian'},
         ]
     }
+
+
+
   render() {
     return (
       <div className="App">
@@ -37,7 +40,7 @@ class App extends Component {
             <h1 className="App-title">MySites in Gracia</h1>
         </header>
           <body>
-            <SitesList/>
+            <SitesList sites={this.state.sites}/>
             <Map sites={this.state.sites}/>
           </body>
       </div>
