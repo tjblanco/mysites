@@ -14,7 +14,7 @@ class App extends Component {
             {lat: 41.402952, lng: 2.15791, title: 'Bar Canigó', class: 'Tapas'},
             {lat: 41.4043009, lng: 2.1549702, title: 'Intrèpid de Gràcia', class: 'Tapas'},
             {lat: 41.4007937, lng: 2.1587425, title: 'Messié Pizza', class: 'Pizza'},
-            {lat: 41.380802, lng: 2.185336, title: 'La Gavina', class: 'Pizza'},
+            {lat: 41.401499, lng: 2.155414, title: 'La Gavina', class: 'Pizza'},
             {lat: 41.405009, lng: 2.153935, title: "Chivuo's", class: 'Burguer'},
             {lat: 41.402015, lng: 2.157232, title: 'La Vespa Burger Bar', class: 'Burguer'},
             {lat: 41.403539, lng: 2.160304, title: 'Heliogàbal', class: 'Cocktail Bar'},

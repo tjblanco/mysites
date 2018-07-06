@@ -6,7 +6,7 @@ export default class Map extends Component {
 
     static defaultProps = {
         center: { lat: 41.40166, lng: 2.1566901 },
-        zoom: 16
+        zoom: 15
     }
 
     createMapOptions= (maps) => {

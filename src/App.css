@@ -58,3 +58,17 @@
   top: 101px;
   bottom: 0px;
 }
+
+/*Button*/
+.button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #d73027;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+.button:hover {
+  background: #1a9850;
+}
