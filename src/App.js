@@ -4,7 +4,7 @@ import './App.css';
 import menuIcon from './menu.svg'
 import './responsive.css'
 import SitesList from "./SitesList";
-import GoogleMap from "./GoogleMap"
+import Map from "./Map"
 
 class App extends Component {
   render() {
@@ -19,7 +19,7 @@ class App extends Component {
         </header>
           <body>
             <SitesList/>
-            <GoogleMap/>
+            <Map/>
           </body>
       </div>
     );
