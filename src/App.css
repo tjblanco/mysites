@@ -44,9 +44,10 @@
   color: black;
   position: absolute;
   left: 0;
-  height: 100%;
   padding: 0 5px 0 20px;
   text-align: left;
+  top: 101px;
+  bottom: 0px;
 }
 
 /* Google Maps*/
@@ -54,5 +55,6 @@
   left: 275px;
   position: absolute;
   right: 0px;
-  height: 100%;
+  top: 101px;
+  bottom: 0px;
 }

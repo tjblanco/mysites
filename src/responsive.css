@@ -32,12 +32,23 @@
         font-weight: 100;
     }
     .map {
-        left: 0px;
+        left: 0;
         position: absolute;
-        right: 0px;
-        background: lightgray;
-        height: 100%;
+        right: 0;
         z-index: -1;
+        top: 81px;
+        bottom: 0;
+    }
+    .nav_panel {
+        width: 250px;
+        background: #fffdd0;
+        color: black;
+        position: absolute;
+        left: 0;
+        padding: 0 5px 0 20px;
+        text-align: left;
+        top: 81px;
+        bottom: 0px;
     }
 }
 
@@ -68,11 +79,12 @@
         display: none;
     }
     .map {
-        left: 0px;
+        left: 0;
         position: absolute;
-        right: 0px;
+        right: 0;
         background: lightgray;
-        height: 100%;
         z-index: -1;
+        top: 81px;
+        bottom: 0;
     }
 }
