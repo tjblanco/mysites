@@ -4,8 +4,8 @@ import GoogleMap from './GoogleMap'
 
 export default class Map extends Component {
     static defaultProps = {
-        center: { lat: 40.7446790, lng: -73.9485420 },
-        zoom: 11
+        center: { lat: 41.40166, lng: 2.1566901 },
+        zoom: 15
     }
     render() {
         return (
@@ -19,9 +19,6 @@ export default class Map extends Component {
 
                     <GoogleMap
 
-                        lat={ 40.7473310 }
-                        lng={ -73.8517440 }
-                        text={ "Where's Waldo?" }
                     />
                 </GoogleMapReact>
             </div>
