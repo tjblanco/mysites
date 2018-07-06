@@ -30,7 +30,7 @@ export default class Map extends Component {
                     }}
                     options={this.createMapOptions}
                 >
-                    {this.props.sites.map((site) => (<Markers lat={site.lat} lng={site.lng} text={site.title} className={site.class}/>) )}
+                    {this.props.sites.map((site,index) => (<Markers lat={site.lat} lng={site.lng} text={site.title} className={site.class} key={index}/>) )}
                 </GoogleMapReact>
             </div>
         )

@@ -41,6 +41,7 @@ class App extends Component {
             <Map sites={this.state.sites}/>
           </body>
       </div>
+
     );
   }
 }
