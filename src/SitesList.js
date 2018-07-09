@@ -13,7 +13,10 @@ class SitesList extends Component {
         return(
             <navigator className="nav_panel hidden">
                 <ClassSelect classes={this.getClasses()} />
-                <p>Here is the navigator panel!!</p>
+                <h2 class="small">MySites</h2>
+                <ul>
+                    { this.props.sites.map((c) => (<li>{c.title}</li>)) }
+                </ul>
             </navigator>
         )
     }

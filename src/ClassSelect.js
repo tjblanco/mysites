@@ -7,7 +7,7 @@ export default class ClassSelect extends Component {
     render() {
         return(
             <div>
-                <p className="small">Select Cousine Type</p>
+                <h2 className="small">Select Cousine Type</h2>
                 <select>
                     <option >All</option>
                     {this.props.classes.map((c) => (<option>{c}</option>)) }
