@@ -69,12 +69,12 @@ select {
   font-size: 0.8em;
   font-weight: 700;
 }
-ol {
-  padding-left: 20px;
+ul {
+  padding-left: 0;
 }
 li {
   padding-bottom: 5px;
-  /*list-style-type: none;*/
+  list-style-type: none;
   cursor: pointer;
 }
 li:hover {
