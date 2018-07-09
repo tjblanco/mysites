@@ -80,6 +80,7 @@ li {
 }
 li:hover {
   color: #d73027;
+  font-weight: 700;
 }
 
 
