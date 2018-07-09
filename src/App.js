@@ -36,7 +36,7 @@ class App extends Component {
                 document.querySelector('.nav_panel').classList.toggle('hidden')
             )} src={menuIcon} className="menu" alt="menu" />
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">MySites in Gracia</h1>
+            <h1 className="App-title">MySites in Gràcia</h1>
         </header>
           <body>
             <SitesList sites={this.state.sites}/>

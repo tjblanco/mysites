@@ -51,6 +51,7 @@ class MapWrapper extends Component {
             width: '100%',
             height: '100%'
         }
+        const labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         return (
             <div className='map'>
                 <Map
@@ -62,7 +63,18 @@ class MapWrapper extends Component {
                     zoom = { this.props.zoom }
                     initialCenter = {this.props.center}
                 >
-                    {this.props.sites.map((site,index) => (<Marker position={site.position} title={site.title} name={site.title} className={site.class} key={index}/>) )}
+                    {this.props.sites.map((site,index) => (<Marker position={site.position}
+                                                                   title={site.title}
+                                                                   name={site.title}
+                                                                   className={site.class}
+                                                                   key={index}
+                                                                   label={labels[index % labels.length]}
+                                                                   // icon={{
+                                                                   //     url: "/path/to/custom_icon.png",
+                                                                   //     anchor: new google.maps.Point(32,32),
+                                                                   //     scaledSize: new google.maps.Size(64,64)
+                                                                   // }}
+                    />) )}
                 </Map>
             </div>
         )
