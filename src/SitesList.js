@@ -3,19 +3,19 @@ import ClassSelect from "./ClassSelect";
 
 class SitesList extends Component {
     getClasses = () => {
-
         var a = this.props.sites.map((site) => {return(site.class)})
-        a = Array.from(new Set(a))
-        console.log(a)
-        return a
+        return Array.from(new Set(a))
     }
+
+
+
     render() {
         return(
             <navigator className="nav_panel hidden">
                 <ClassSelect classes={this.getClasses()} />
-                <h2 class="small">MySites</h2>
+                <h2 className="small">MySites</h2>
                 <ul>
-                    { this.props.sites.map((c) => (<li>{c.title}</li>)) }
+                    { this.props.sites.map((c) => (<li key={c.title}>{c.title}</li>)) }
                 </ul>
             </navigator>
         )
