@@ -20,7 +20,7 @@ class App extends Component {
             {position: {lat: 41.403539, lng: 2.160304}, title: 'Heliogàbal', class: 'Cocktail Bar'},
             {position: {lat: 41.4040643, lng: 2.1582468}, title: 'Chatelet', class: 'Cocktail Bar'},
             {position: {lat: 41.404438, lng: 2.1568115}, title: 'Gràcia Latina', class: 'Cocktail Bar'},
-            {position: {lat: 41.396620, lng: 2.156338}, title: 'Modu', class: 'Asian'},
+            {position: {lat: 41.396620, lng: 2.156338}, title: 'Modu Korean Restaurant', class: 'Asian'},
             {position: {lat: 41.399710, lng: 2.157236}, title: 'Kibuka Sushi', class: 'Asian'},
             {position: {lat: 41.403824, lng: 2.148031}, title: 'El Petit Bangkok', class: 'Asian'},
         ]
