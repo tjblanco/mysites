@@ -12,7 +12,8 @@ class MapWrapper extends Component {
         this.state = {
             showingInfoWindow: false,
             activeMarker: null,
-            selectedPlace: null
+            selectedPlace: null,
+            prevSelected: null
         }
         // binding this to event-handler functions
         this.onMarkerClick = this.onMarkerClick.bind(this)
@@ -20,6 +21,18 @@ class MapWrapper extends Component {
         this.onInfoClose = this.onInfoClose.bind(this)
     }
 
+
+    componentDidUpdate() {
+        console.log(this.Children)
+        if(this.props.activeSite != null != null & this.props.activeSite != this.state.prevSelected){
+            console.log(this.props.activeSite)
+            this.setState({
+                prevSelected: this.props.activeSite,
+                showingInfoWindow: true,
+                selectedPlace: this.props.activeSite,
+            })
+        }
+    }
 
     onMarkerClick = (props, marker, e) => {
         // Remove style if there is a selected marker
@@ -42,7 +55,6 @@ class MapWrapper extends Component {
     }
 
     onMapClick = (props, marker, e) =>{
-        console.log(this.state.activeMarker)
         if(this.state.activeMarker != null)
             this.state.activeMarker.setIcon(
                 {
@@ -88,8 +100,8 @@ class MapWrapper extends Component {
                                                                    name={site.title}
                                                                    className={site.class}
                                                                    key={index}
-                                                                   options={{
-                                                                       icon: site.active ? 'http://maps.google.com/mapfiles/marker_yellow.png' : 'http://maps.google.com/mapfiles/marker.png'
+                                                                   options={{ icon: 'http://maps.google.com/mapfiles/marker.png'
+                                                                       // icon: site.active ? 'http://maps.google.com/mapfiles/marker_yellow.png' : 'http://maps.google.com/mapfiles/marker.png'
                                                                    }}
                     />) )}
 

@@ -25,7 +25,8 @@ class App extends Component {
             {position: {lat: 41.403824, lng: 2.148031}, title: 'El Petit Bangkok', class: 'Asian', active:false},
         ],
         classes: ['All','Tapas','Pizza','Burguer','Cocktail Bar','Asian'],
-        displaySites: []
+        displaySites: [],
+        siteActive: null
     }
     componentDidMount() {
         this.setState({
@@ -48,11 +49,8 @@ class App extends Component {
         }
     }
     selectMarker= (selector) => {
-        console.log(this.state.displaySites)
-        this.setState(() => {
-            this.state.displaySites.map((site,i) => {
-                site.title === selector ? this.state.displaySites[i].active = true : this.state.displaySites[i].active = false
-            })
+        this.setState({
+            siteActive: this.state.displaySites.filter((site) => site.title === selector)[0]
         })
     }
 
@@ -72,7 +70,7 @@ class App extends Component {
                        filterOptions={(filter) => this.filterOptions(filter)}
                        selectMarker={(selector) => this.selectMarker(selector)}
             />
-            <MapWrapper sites={this.state.displaySites}/>
+            <MapWrapper sites={this.state.displaySites} activeSite={this.state.siteActive}/>
           </body>
       </div>
 
