@@ -23,10 +23,32 @@ class App extends Component {
             {position: {lat: 41.396620, lng: 2.156338}, title: 'Modu Korean Restaurant', class: 'Asian'},
             {position: {lat: 41.399710, lng: 2.157236}, title: 'Kibuka Sushi', class: 'Asian'},
             {position: {lat: 41.403824, lng: 2.148031}, title: 'El Petit Bangkok', class: 'Asian'},
-        ]
+        ],
+        classes: ['All','Tapas','Pizza','Burguer','Cocktail Bar','Asian'],
+        displaySites: []
     }
 
+    componentDidMount() {
+        this.setState({
+            displaySites: this.state.sites
+        })
+    }
 
+    filterOptions= (filter) => {
+        if(filter === 'undefined'){
+            this.setState({
+                displaySites: this.state.sites
+            })
+        }else if(filter === 'All') {
+            this.setState({
+                displaySites: this.state.sites
+            })
+        }else{
+            this.setState({
+                displaySites: this.state.sites.filter((site) => site.class === filter)
+            })
+        }
+    }
 
   render() {
     return (
@@ -39,8 +61,8 @@ class App extends Component {
             <h1 className="App-title">MySites in Gràcia</h1>
         </header>
           <body>
-            <SitesList sites={this.state.sites}/>
-            <MapWrapper sites={this.state.sites}/>
+            <SitesList sites={this.state.displaySites} classes={this.state.classes} filterOptions={(filter) => this.filterOptions(filter)}/>
+            <MapWrapper sites={this.state.displaySites}/>
           </body>
       </div>
 
