@@ -15,8 +15,9 @@ class MapWrapper extends Component {
             selectedPlace: null
         }
         // binding this to event-handler functions
-        this.onMarkerClick = this.onMarkerClick.bind(this);
-        this.onMapClick = this.onMapClick.bind(this);
+        this.onMarkerClick = this.onMarkerClick.bind(this)
+        this.onMapClick = this.onMapClick.bind(this)
+        this.onInfoClose = this.onInfoClose.bind(this)
     }
 
     onMarkerClick = (props, marker, e) => {
@@ -36,7 +37,7 @@ class MapWrapper extends Component {
             selectedPlace: props,
             activeMarker: marker,
             showingInfoWindow: true
-        });
+        })
     }
 
     onMapClick = (props, marker, e) =>{
@@ -49,7 +50,20 @@ class MapWrapper extends Component {
             selectedPlace: null,
             activeMarker: null,
             showingInfoWindow: false
-        });
+        })
+    }
+
+    onInfoClose = (props, marker, e) => {
+        if(this.state.activeMarker != null)
+            this.state.activeMarker.setIcon(
+                {
+                    url: 'http://maps.google.com/mapfiles/marker.png'
+                })
+        this.setState({
+            selectedPlace: null,
+            activeMarker: null,
+            showingInfoWindow: false
+        })
     }
 
     render() {
@@ -76,8 +90,9 @@ class MapWrapper extends Component {
                     />) )}
 
                     <InfoWindow
-                        marker = { this.state.activeMarker }
-                        visible = { this.state.showingInfoWindow }
+                        marker={this.state.activeMarker}
+                        visible={this.state.showingInfoWindow}
+                        onClose={this.onInfoClose}
                     >
                         <h4>
                             {this.state.selectedPlace != null ? this.state.selectedPlace.title : 'MySite' }
