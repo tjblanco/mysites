@@ -27,13 +27,11 @@ class App extends Component {
         classes: ['All','Tapas','Pizza','Burguer','Cocktail Bar','Asian'],
         displaySites: []
     }
-
     componentDidMount() {
         this.setState({
             displaySites: this.state.sites
         })
     }
-
     filterOptions= (filter) => {
         if(filter === 'undefined'){
             this.setState({
@@ -49,6 +47,9 @@ class App extends Component {
             })
         }
     }
+    selectMarker= (selector) => {
+        console.log(selector)
+    }
 
   render() {
     return (
@@ -61,7 +62,11 @@ class App extends Component {
             <h1 className="App-title">MySites in Gràcia</h1>
         </header>
           <body>
-            <SitesList sites={this.state.displaySites} classes={this.state.classes} filterOptions={(filter) => this.filterOptions(filter)}/>
+            <SitesList sites={this.state.displaySites} 
+                       classes={this.state.classes} 
+                       filterOptions={(filter) => this.filterOptions(filter)}
+                       selectMarker={(selector) => this.selectMarker(selector)}
+            />
             <MapWrapper sites={this.state.displaySites}/>
           </body>
       </div>

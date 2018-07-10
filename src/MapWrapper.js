@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { GoogleApiWrapper, InfoWindow, Map, Marker } from 'google-maps-react';
+import { GoogleApiWrapper, InfoWindow, Map, Marker} from 'google-maps-react';
 
 class MapWrapper extends Component {
     static defaultProps = {
@@ -57,7 +57,6 @@ class MapWrapper extends Component {
             width: '100%',
             height: '100%'
         }
-        const labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         return (
             <div className='map'>
                 <Map
@@ -75,6 +74,18 @@ class MapWrapper extends Component {
                                                                    key={index}
                                                                    options={{icon: 'http://maps.google.com/mapfiles/marker.png'}}
                     />) )}
+
+                    <InfoWindow
+                        marker = { this.state.activeMarker }
+                        visible = { this.state.showingInfoWindow }
+                    >
+                        <h4>
+                            {this.state.selectedPlace != null ? this.state.selectedPlace.title : 'MySite' }
+                        </h4>
+                        <p>
+                            {this.state.selectedPlace != null ? this.state.selectedPlace.className : 'MySite type'}
+                        </p>
+                    </InfoWindow>
                 </Map>
             </div>
         )
