@@ -20,6 +20,7 @@ class MapWrapper extends Component {
         this.onInfoClose = this.onInfoClose.bind(this)
     }
 
+
     onMarkerClick = (props, marker, e) => {
         // Remove style if there is a selected marker
         if(this.state.activeMarker != null)
@@ -41,6 +42,7 @@ class MapWrapper extends Component {
     }
 
     onMapClick = (props, marker, e) =>{
+        console.log(this.state.activeMarker)
         if(this.state.activeMarker != null)
             this.state.activeMarker.setIcon(
                 {
@@ -86,7 +88,9 @@ class MapWrapper extends Component {
                                                                    name={site.title}
                                                                    className={site.class}
                                                                    key={index}
-                                                                   options={{icon: 'http://maps.google.com/mapfiles/marker.png'}}
+                                                                   options={{
+                                                                       icon: site.active ? 'http://maps.google.com/mapfiles/marker_yellow.png' : 'http://maps.google.com/mapfiles/marker.png'
+                                                                   }}
                     />) )}
 
                     <InfoWindow
