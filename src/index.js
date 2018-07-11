@@ -179,10 +179,11 @@ function set_state(mysites) {
         type: 'SET_STATE',
         state: {
             filters: [
-                {id: 'Tapas', inuse: false },
-                {id: 'Pizza', inuse: false },
-                {id: 'Burguer', inuse: false },
-                {id: 'Cocktail Bar', inuse: false },
+                {id: 'All', inuse:false},
+                {id: 'Tapas', inuse: false},
+                {id: 'Pizza', inuse: false},
+                {id: 'Burguer', inuse: false},
+                {id: 'Cocktail Bar', inuse: false},
                 {id: 'Asian', inuse: false}
             ],
             markers: mysites,

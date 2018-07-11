@@ -19,8 +19,6 @@
 .idea/workspace.xml
 ./src/App.test 2.js
 ./src/App 2.css
-./src/CampFilter.js
-./src/CampFilterList.js
 ./src/CampList.js
 ./src/CampListItem.js
 ./src/CampMap.js

@@ -6,8 +6,8 @@ import logo from './logo.svg';
 import menuIcon from './menu.svg'
 import './responsive.css'
 import SitesFilterList from './SitesFilterList';
-import SitesList from './SitesList';
-import SitesMapContainer from './SitesMapContainer';
+// import SitesList from './SitesList';
+// import SitesMapContainer from './SitesMapContainer';
 
 export class SitesFilterApp extends React.Component {
 
@@ -24,7 +24,7 @@ export class SitesFilterApp extends React.Component {
             </header>
             <body>
             <SitesFilterList {...this.props}/>
-            <SitesMapContainer {...this.props} />
+            {/*<SitesMapContainer {...this.props} />*/}
             {/*<SitesList sites={this.state.displaySites} classes={this.state.classes} filterOptions={(filter) => this.filterOptions(filter)}/>*/}
             {/*<MapWrapper sites={this.state.displaySites}/>*/}
             </body>
