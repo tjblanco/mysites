@@ -7,6 +7,7 @@ function getFilterIndex(state, itemId) {
 }
 
 function getMarkerIndex(state, itemId) {
+  console.log(state.get('markers'))
   return state.get('markers').findIndex(
     (item) => item.get('title') === itemId
   );
@@ -44,36 +45,32 @@ function addMarker(state, marker) {
 }
 
 function changeFilter(state, filter) {
-  filter = filter.split('"id": "')[1].split('",')[0]
-  let filterIndex = getFilterIndex(state,filter)
-  const updatedFilter = getFilters(state, filterIndex)
-  let updatedFilters = state.get('filters')
+  if(filter !== 'All'){
+      let markers = state.get('markers')
+      let updatedMarkers = markers
+      markers.map((marker,markerIndex) => {
+          let mapOn = false
+          if(marker.get('description')===filter)
+              mapOn = true
+          const updatedMarker = updateMarker(state, markerIndex, mapOn)
+          updatedMarkers = updatedMarkers.set(markerIndex, updatedMarker)
+      })
 
-  updatedFilters = updatedFilters.set(filterIndex, updatedFilter)
+      return state.merge(Map({
+          'markers': updatedMarkers
+      }))
+  } else {
+      let markers = state.get('markers')
+      let updatedMarkers = markers
+      markers.map((marker,markerIndex) => {
+          const updatedMarker = updateMarker(state, markerIndex, true)
+          updatedMarkers = updatedMarkers.set(markerIndex, updatedMarker)
+      })
+      return state.merge(Map({
+          'markers': updatedMarkers
+      }))
+  }
 
-  let active_filters = updatedFilters.filter(
-    item => item.get('inuse') === true
-  )
-
-  let markers = state.get('markers')
-  let updatedMarkers = markers
-  markers.forEach(marker => {
-    console.log(markers)
-    let markerIndex = getMarkerIndex(state, marker.get('title'))
-    let mapOn = true
-    active_filters.forEach(item => {
-      if (marker.get('properties').get(item.get('id')) !== true) {
-        mapOn = false
-      }
-    })
-    const updatedMarker = updateMarker(state, markerIndex, mapOn)
-    updatedMarkers = updatedMarkers.set(markerIndex, updatedMarker)
-  })
-
-  return state.merge(Map({
-    'filters': updatedFilters,
-    'markers': updatedMarkers
-  }))
 }
 
 export default function(state = Map(), action) {
