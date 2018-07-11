@@ -1,15 +1,15 @@
 import React from 'react';
 import * as config from './config'
 import GoogleApiComponent from './GoogleApiComponent'
-import CampMap from './CampMap'
+import SitesMap from './SitesMap'
 import {Marker} from './Marker'
 import {InfoWindow} from './InfoWindow'
 
-export class CampMapContainer extends React.Component {
+export class SitesMapContainer extends React.Component {
   render() {
     return (
       <div>
-      <CampMap google={this.props.google}>
+      <SitesMap google={this.props.google}>
         {this.props.markers.map(marker =>
           <Marker
             key={marker.get('title')}
@@ -29,7 +29,7 @@ export class CampMapContainer extends React.Component {
                 <h4>{this.props.selectedTitle}</h4>
               </div>
           </InfoWindow>
-      </CampMap>
+      </SitesMap>
 
       </div>
     )}
@@ -38,4 +38,4 @@ export class CampMapContainer extends React.Component {
 let key = config.getGoogleKey()
 export default GoogleApiComponent({
   apiKey: key
-})(CampMapContainer)
+})(SitesMapContainer)

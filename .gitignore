@@ -21,8 +21,6 @@
 ./src/App 2.css
 ./src/CampList.js
 ./src/CampListItem.js
-./src/CampMap.js
-./src/CampMapContainer.js
 ./src/index 2.css
 ./src/index 2.js
 ./src/InfoWindow.js

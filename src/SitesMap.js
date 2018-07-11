@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export default class CampMap extends React.Component {
+export default class SitesMap extends React.Component {
 
   renderChildren() {
     const {children} = this.props;
@@ -34,9 +34,9 @@ export default class CampMap extends React.Component {
     // touches the DOM
       const mapRef = this.refs.map;
       const node = ReactDOM.findDOMNode(mapRef);
-      let zoom = 10;
-      let lat = 42.9456;
-      let lng = -122.2;
+      let zoom = 15;
+      let lat = 41.40166;
+      let lng = 2.1566901;
       const center = new maps.LatLng(lat, lng);
       const mapConfig = Object.assign({}, {
         center: center,

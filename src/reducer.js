@@ -44,9 +44,11 @@ function addMarker(state, marker) {
 }
 
 function changeFilter(state, filter) {
+  filter = filter.split('"id": "')[1].split('",')[0]
   let filterIndex = getFilterIndex(state,filter)
   const updatedFilter = getFilters(state, filterIndex)
   let updatedFilters = state.get('filters')
+
   updatedFilters = updatedFilters.set(filterIndex, updatedFilter)
 
   let active_filters = updatedFilters.filter(
@@ -56,6 +58,7 @@ function changeFilter(state, filter) {
   let markers = state.get('markers')
   let updatedMarkers = markers
   markers.forEach(marker => {
+    console.log(markers)
     let markerIndex = getMarkerIndex(state, marker.get('title'))
     let mapOn = true
     active_filters.forEach(item => {
