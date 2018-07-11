@@ -8,13 +8,6 @@ export const FoursquareApi = function(opts) {
     const URL = 'https://api.foursquare.com/v2/venues/search?ll=';
 
 
-    let loading = false;
-    let channel = null;
-    let language = null;
-    let region = null;
-
-    let onLoadEvents = [];
-
     const url = () => {
         let url = URL;
         let params = {

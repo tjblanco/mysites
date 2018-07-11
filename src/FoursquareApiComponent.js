@@ -1,5 +1,4 @@
-import React, { PropTypes as T } from 'react'
-import FoursquareApi from './utils/FoursquareApi'
+import React from 'react'
 
 class FoursquareApiComponent extends React.Component {
     constructor(props, context) {
@@ -13,17 +12,38 @@ class FoursquareApiComponent extends React.Component {
     }
 
     componentDidMount() {
-        var url = FoursquareApi({
-            ll: this.props.latlng
-        })
-        fetch(url)
+
+        const ll =  this.props.latlng;
+        const apiKey = 'UA5QGQ1JTYZHSWEOSHBRZLWGSC11ZQSZEUQSPMNRB2CLWUNR';
+        const client = 'MAUHT20YAPLMM4UKVLWHBDNGDHKLCD1LTG0XDEKHH0YJ2XVG';
+        const v = '20180711';
+        const URL = 'https://api.foursquare.com/v2/venues/search';
+
+
+        const url = () => {
+            let url = URL;
+            let params = {
+                client_id: client,
+                client_secret: apiKey,
+                v: v
+            }
+
+            let paramStr = Object.keys(params)
+                .filter(k => !!params[k])
+                .map(k => `${k}=${params[k]}`).join('&');
+
+            return `${url}?ll=${ll}&${paramStr}`;
+        }
+
+
+        fetch(url())
             .then(res => res.json())
             .then(
+
                 (result) => {
-                    console.log(result)
                     this.setState({
                         isLoaded: true,
-                        items: result.items
+                        items: result.response.venues.slice(0,5)
                     });
                 },
                 // Note: it's important to handle errors here
@@ -36,6 +56,7 @@ class FoursquareApiComponent extends React.Component {
                     });
                 }
             )
+
     }
 
     render() {
@@ -49,7 +70,7 @@ class FoursquareApiComponent extends React.Component {
                 <ul>
                     {items.map(item => (
                         <li key={item.name}>
-                            {item.name} {item.price}
+                            {item.name} {item.location.formattedAddress}
                         </li>
                     ))}
                 </ul>
@@ -58,4 +79,4 @@ class FoursquareApiComponent extends React.Component {
     }
 }
 
-export default FoursquareApiComponent;
+export default FoursquareApiComponent

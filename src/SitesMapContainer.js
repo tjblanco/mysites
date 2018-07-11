@@ -4,6 +4,8 @@ import GoogleApiComponent from './GoogleApiComponent'
 import SitesMap from './SitesMap'
 import {Marker} from './Marker'
 import {InfoWindow} from './InfoWindow'
+import FoursquareApiComponent from './FoursquareApiComponent'
+
 
 export class SitesMapContainer extends React.Component {
   render() {
@@ -30,6 +32,7 @@ export class SitesMapContainer extends React.Component {
                 <h4>{this.props.selectedTitle}</h4>
               </div>
           </InfoWindow>
+
       </SitesMap>
       </div>
     )}
