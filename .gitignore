@@ -17,6 +17,20 @@
 .env.production.local
 .idea
 .idea/workspace.xml
+./src/App.test 2.js
+./src/App 2.css
+./src/CampFilter.js
+./src/CampFilterApp.js
+./src/CampFilterList.js
+./src/CampList.js
+./src/CampListItem.js
+./src/CampMap.js
+./src/CampMapContainer.js
+./src/index 2.css
+./src/index 2.js
+./src/InfoWindow.js
+./src/Marker.js
+
 
 npm-debug.log*
 yarn-debug.log*
