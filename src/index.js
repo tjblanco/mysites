@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
@@ -174,15 +173,17 @@ let features = [{
 
 set_state(get_mysites(features))
 
+// Set app state
 function set_state(mysites) {
     store.dispatch ({
         type: 'SET_STATE',
         state: {
             filters: [
-                {id: 'shower', inuse: false },
-                {id: 'pets', inuse: false },
-                {id: 'flush', inuse: false },
-                {id: 'water', inuse: false }
+                {id: 'Tapas', inuse: false },
+                {id: 'Pizza', inuse: false },
+                {id: 'Burguer', inuse: false },
+                {id: 'Cocktail Bar', inuse: false },
+                {id: 'Asian', inuse: false}
             ],
             markers: mysites,
             gmapMarkers: [],
