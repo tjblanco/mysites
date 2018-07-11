@@ -20,6 +20,7 @@ function onMarkerClick(state, marker) {
         {
             url: 'http://maps.google.com/mapfiles/marker_yellow.png'
         })
+    // document.querySelector('.infoWindow').style.display='block';
   return state.merge(Map({
     'activeMarker': marker,
     'selectedTitle': marker.get('title'),
