@@ -35,10 +35,15 @@ export class Marker extends React.Component {
     const pref = {
         map: map,
         position: position,
-        title:title
+        title:title,
+        animation: google.maps.Animation.DROP,
       };
 
     this.marker = new google.maps.Marker(pref);
+    this.marker.setIcon(
+        {
+            url: 'http://maps.google.com/mapfiles/marker.png'
+        })
     this.marker.addListener('click', (e) => {
       this.props.onMarkerClick(this.marker)
     })

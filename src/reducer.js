@@ -7,7 +7,6 @@ function getFilterIndex(state, itemId) {
 }
 
 function getMarkerIndex(state, itemId) {
-  console.log(state.get('markers'))
   return state.get('markers').findIndex(
     (item) => item.get('title') === itemId
   );
@@ -30,7 +29,15 @@ function setState(state, newState) {
 }
 
 function onMarkerClick(state, marker) {
-
+    if(state.get('activeMarker') != null)
+        state.get('activeMarker').setIcon(
+            {
+                url: 'http://maps.google.com/mapfiles/marker.png'
+            })
+    marker.setIcon(
+        {
+            url: 'http://maps.google.com/mapfiles/marker_yellow.png'
+        })
   return state.merge(Map({
     'activeMarker': marker,
     'selectedTitle': marker.get('title'),

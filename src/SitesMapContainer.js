@@ -19,7 +19,8 @@ export class SitesMapContainer extends React.Component {
             position={marker.get('position')}
             mapOn={marker.get('mapOn')}
             addMarker={this.props.addMarker}
-            onMarkerClick={this.props.onMarkerClick}/>
+            onMarkerClick={this.props.onMarkerClick}
+          />
 
         )}
         <InfoWindow {...this.props}
