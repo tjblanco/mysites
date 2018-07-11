@@ -24,6 +24,9 @@ export class SitesMapContainer extends React.Component {
 
         )}
         <InfoWindow {...this.props}
+            onCloseFn={() => (this.props.activeMarker.setIcon({
+                url: 'http://maps.google.com/mapfiles/marker.png'
+            }))}
             marker={this.props.activeMarker}
             visible={this.props.showingInfoWindow}>
               <div>

@@ -1,23 +1,5 @@
 import {Map} from 'immutable';
 
-function getFilterIndex(state, itemId) {
-  return state.get('filters').findIndex(
-    (item) => item.get('id') === itemId
-  );
-}
-
-function getMarkerIndex(state, itemId) {
-  return state.get('markers').findIndex(
-    (item) => item.get('title') === itemId
-  );
-}
-
-function getFilters(state, filterIndex) {
-  return state.get('filters')
-    .get(filterIndex)
-    .update('inuse', inuse => inuse === false ? true : false);
-}
-
 function updateMarker(state, markerIndex, mapOnVal) {
   return state.get('markers')
     .get(markerIndex)

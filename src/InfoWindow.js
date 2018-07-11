@@ -32,8 +32,8 @@ export class InfoWindow extends React.Component {
     if ((this.props.visible !== prevProps.visible) ||
         (this.props.marker !== prevProps.marker)) {
       this.props.visible ?
-        this.openWindow() :
-        this.closeWindow();
+          this.openWindow() : this.closeWindow();
+
     }
 
     if (this.props.children !== prevProps.children) {

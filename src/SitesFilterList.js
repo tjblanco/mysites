@@ -39,7 +39,7 @@ export default class SitesFilterList extends React.Component {
                   <h2 className="small">MySites</h2>
                   <ul>
                       { this.getCampgrounds().map(item =>(<li key={item.get('title')}
-                                                              onClick={() =>this.props.onMarkerClick(this.getMarker(this.props.title))}
+                                                              onClick={() => this.props.onMarkerClick(this.getMarker(item.get('title')))}
 
 
                       >{item.get('title')}</li>)) }
