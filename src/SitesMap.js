@@ -51,12 +51,12 @@ export default class SitesMap extends React.Component {
 
   render() {
     const style = {
-      minWidth: '400px',
-      minHeight: '400px'
+      minWidth: '100%',
+      minHeight: '100%'
     }
     return (
       <div className="row">
-        <div className='col-xs-12 col-sm-12 col-md-12' style={style} ref='map'>
+        <div className='map' style={style} ref='map'>
           {this.renderChildren()}
           Loading map...
         </div>
