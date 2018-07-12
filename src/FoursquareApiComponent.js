@@ -79,7 +79,7 @@ class FoursquareApiComponent extends React.Component {
     render() {
         const { error, isLoaded, items } = this.state;
         if (error) {
-            return <div>Error: {error.message}</div>;
+            return <div><p className="small">Sorry, we couldn't get the info. Error: {error.message}</p></div>;
         } else if (!isLoaded) {
             return <div>Loading...</div>;
         } else {

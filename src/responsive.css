@@ -38,6 +38,7 @@
         z-index: 1;
         top: 81px;
         bottom: 0;
+        min-height: 500px;
     }
     .nav_panel {
         width: 250px;
@@ -50,6 +51,7 @@
         top: 81px;
         bottom: 0;
         z-index: 2;
+        min-height: 500px;
     }
     .info {
         position: absolute;
@@ -102,6 +104,7 @@
         z-index: 1;
         top: 81px;
         bottom: 0;
+        min-height: 500px;
     }
     .info {
         position: absolute;
@@ -126,6 +129,7 @@
         top: 81px;
         bottom: 0;
         z-index: 2;
+        min-height: 500px;
     }
 
 }

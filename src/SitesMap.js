@@ -50,7 +50,8 @@ export default class SitesMap extends React.Component {
   }
   render() {
     const style = {
-        heigth: '100%'
+        heigth: '100%',
+        minHeigth: '550px'
     }
     return (
       <div>
