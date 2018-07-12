@@ -35,7 +35,7 @@
         left: 0;
         position: absolute;
         right: 0;
-        z-index: -1;
+        z-index: 1;
         top: 81px;
         bottom: 0;
     }
@@ -48,7 +48,8 @@
         padding: 0 5px 0 20px;
         text-align: left;
         top: 81px;
-        bottom: 0px;
+        bottom: 0;
+        z-index: 2;
     }
     .info {
         position: absolute;
@@ -61,6 +62,9 @@
         text-align: left;
         font-size: 0.8em;
         display: none;
+    }
+    .show {
+        display: block;
     }
 }
 
@@ -95,7 +99,7 @@
         position: absolute;
         right: 0;
         background: lightgray;
-        z-index: -1;
+        z-index: 1;
         top: 81px;
         bottom: 0;
     }
@@ -111,4 +115,17 @@
         font-size: 0.8em;
         display: none;
     }
+    .nav_panel {
+        width: 250px;
+        background: #fffdd0;
+        color: black;
+        position: absolute;
+        left: 0;
+        padding: 0 5px 0 20px;
+        text-align: left;
+        top: 81px;
+        bottom: 0;
+        z-index: 2;
+    }
+
 }
