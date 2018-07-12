@@ -128,3 +128,21 @@ li:hover {
   filter: contrast(1);
   z-index: 4000;
 }
+
+.info {
+  position: absolute;
+  top: 110px;
+  left: 285px;
+  z-index: 5;
+  background-color: #fffdd0;
+  padding: 5px;
+  border: 1px solid #d73027;
+  text-align: center;
+  line-height: 30px;
+  padding-left: 10px;
+  /*display: none;*/
+}
+
+.show {
+  display: block;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
-
+import FoursquareApiComponent from './FoursquareApiComponent'
 export class InfoWindow extends React.Component {
 
   openWindow() {
@@ -18,9 +18,9 @@ export class InfoWindow extends React.Component {
 
   updateContent() {
     if (this.props.map) {
-      const content = this.renderChildren();
+      // const content = this.renderChildren();
       this.infowindow
-        .setContent(content);
+        .setContent(<FoursquareApiComponent latlng='41.404438,2.1568115'/>);
     }
   }
 

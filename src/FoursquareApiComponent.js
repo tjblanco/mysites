@@ -5,58 +5,65 @@ class FoursquareApiComponent extends React.Component {
         super(props, context);
 
         this.state = {
+            prevMarker: null,
             error: null,
             loaded: false,
             info: null
         }
     }
 
-    componentDidMount() {
+    componentDidUpdate() {
 
-        const ll =  this.props.latlng;
-        const apiKey = 'UA5QGQ1JTYZHSWEOSHBRZLWGSC11ZQSZEUQSPMNRB2CLWUNR';
-        const client = 'MAUHT20YAPLMM4UKVLWHBDNGDHKLCD1LTG0XDEKHH0YJ2XVG';
-        const v = '20180711';
-        const URL = 'https://api.foursquare.com/v2/venues/search';
-
-
-        const url = () => {
-            let url = URL;
-            let params = {
-                client_id: client,
-                client_secret: apiKey,
-                v: v
-            }
-
-            let paramStr = Object.keys(params)
-                .filter(k => !!params[k])
-                .map(k => `${k}=${params[k]}`).join('&');
-
-            return `${url}?ll=${ll}&${paramStr}`;
-        }
+        // document.querySelector('.info').classList.toggle('show')
+        if(this.props.marker != null){
+            if(this.props.marker != this.state.prevMarker){
+                const ll =  this.props.marker.get('position').lat() + ',' + this.props.marker.get('position').lng()
+                const apiKey = 'DCF32O5F4DN0GVATDUWSXTB1JHDNPHHTU5B4ED2MCPFQRJBU';
+                const client = 'R12ITUMGB3XSH03IIKLB0RYK23CYLAITKDBBMHZAGEQ445Z1';
+                const v = '20180711';
+                const URL = 'https://api.foursquare.com/v2/venues/search';
 
 
-        fetch(url())
-            .then(res => res.json())
-            .then(
+                const url = () => {
+                    let url = URL;
+                    let params = {
+                        client_id: client,
+                        client_secret: apiKey,
+                        v: v
+                    }
 
-                (result) => {
-                    this.setState({
-                        isLoaded: true,
-                        items: result.response.venues.slice(0,5)
-                    });
-                },
-                // Note: it's important to handle errors here
-                // instead of a catch() block so that we don't swallow
-                // exceptions from actual bugs in components.
-                (error) => {
-                    this.setState({
-                        isLoaded: true,
-                        error
-                    });
+                    let paramStr = Object.keys(params)
+                        .filter(k => !!params[k])
+                        .map(k => `${k}=${params[k]}`).join('&');
+
+                    return `${url}?ll=${ll}&${paramStr}`;
                 }
-            )
 
+
+                fetch(url())
+                    .then(res => res.json())
+                    .then(
+                        (result) => {
+                            console.log(result)
+                            this.setState({
+                                prevMarker: this.props.marker,
+                                isLoaded: true,
+                                items: result.response.venues.slice(0,5)
+                            });
+                        },
+                        // Note: it's important to handle errors here
+                        // instead of a catch() block so that we don't swallow
+                        // exceptions from actual bugs in components.
+                        (error) => {
+                            this.setState({
+                                prevMarker: null,
+                                isLoaded: true,
+                                error
+                            });
+                        }
+                    )
+            }
+        }
     }
 
     render() {
@@ -67,13 +74,15 @@ class FoursquareApiComponent extends React.Component {
             return <div>Loading...</div>;
         } else {
             return (
-                <ul>
-                    {items.map(item => (
-                        <li key={item.name}>
-                            {item.name} {item.location.formattedAddress}
-                        </li>
-                    ))}
-                </ul>
+                <div className='info'>
+                    <ul>
+                        {items.map(item => (
+                            <li key={item.name}>
+                                {item.name} {item.location.formattedAddress}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             );
         }
     }
