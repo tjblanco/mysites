@@ -10,17 +10,6 @@ export default class SitesFilter extends React.Component {
                 {this.props.classes.map((c) => (<option value={c.get('id')}>{c.get('id')}</option>))}
             </select>
         </div>
-
-
-      // <div className="col-sm-2">
-      // <input type="checkbox"
-      //          className="toggle"
-      //          id={this.props.id}
-      //          defaultChecked={this.props.inuse}
-      //          onClick={() => this.props.changeFilter(this.props.id)}/>
-      //        &nbsp;
-      //        <label ref="text">{this.props.id}</label>
-      //  </div>
       )
   }
 }

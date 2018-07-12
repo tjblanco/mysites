@@ -83,6 +83,10 @@ li:hover {
   color: #d73027;
   font-weight: 700;
 }
+li:focus {
+  color: #d73027;
+  font-weight: 700;
+}
 
 
 /* Google Maps*/

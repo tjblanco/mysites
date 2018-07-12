@@ -31,6 +31,11 @@ export default class SitesFilterList extends React.Component {
             cg => cg.get('mapOn') === true
         )
     }
+    onKeyPress= (e,title) => {
+        if(e.key==='Enter'){
+            this.props.onMarkerClick(this.getMarker(title))
+        }
+    }
 
     render() {
     return (
@@ -39,6 +44,8 @@ export default class SitesFilterList extends React.Component {
                   <h2 className="small">MySites</h2>
                   <ul>
                       { this.getCampgrounds().map(item =>(<li key={item.get('title')}
+                                                              tabIndex='0'
+                                                              onKeyPress={(e) => this.onKeyPress(e,item.get('title'))}
                                                               onClick={() => this.props.onMarkerClick(this.getMarker(item.get('title')))}
 
 

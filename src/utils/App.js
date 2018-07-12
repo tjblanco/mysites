@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../App.css';
 import menuIcon from './menu.svg'
 import './responsive.css'
 import SitesList from "./SitesList";

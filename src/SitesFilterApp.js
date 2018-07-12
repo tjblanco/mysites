@@ -12,7 +12,7 @@ export class SitesFilterApp extends React.Component {
 
   render() {
     return (
-
+        // General render
         <div className="App">
             <header className="App-header">
                 <img onClick={() => (
@@ -24,21 +24,9 @@ export class SitesFilterApp extends React.Component {
             <body>
             <SitesFilterList {...this.props}/>
             <SitesMapContainer {...this.props} />
-
-            {/*<SitesList sites={this.state.displaySites} classes={this.state.classes} filterOptions={(filter) => this.filterOptions(filter)}/>*/}
-            {/*<MapWrapper sites={this.state.displaySites}/>*/}
             </body>
         </div>
 
-      // <div className="container">
-      //
-      //
-      //   <br></br>
-      //
-      //   <br></br>
-      //   <SitesList {...this.props}/>
-      //
-      // </div>
   )};
 }
 
