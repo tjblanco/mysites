@@ -48,7 +48,7 @@ class FoursquareApiComponent extends React.Component {
                             this.setState({
                                 prevMarker: this.props.marker,
                                 isLoaded: true,
-                                items: result.response.venues.slice(0,5)
+                                items: result.response.venues.filter((venue) => venue.name !== this.props.marker.get('title')).slice(0,4)
                             });
                         },
                         // Note: it's important to handle errors here
@@ -75,13 +75,15 @@ class FoursquareApiComponent extends React.Component {
         } else {
             return (
                 <div className='info'>
-                    <ul>
+                    <h3>{this.props.marker.get('title')}</h3>
+                    <p className="small">Near places:</p>
+                    <ol>
                         {items.map(item => (
                             <li key={item.name}>
-                                {item.name} {item.location.formattedAddress}
+                                {item.name} ({item.categories[0].name})
                             </li>
                         ))}
-                    </ul>
+                    </ol>
                 </div>
             );
         }

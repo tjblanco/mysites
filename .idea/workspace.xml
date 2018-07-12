@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa22fa26-ccf7-41ad-99b0-474e032694a1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FoursquareApiComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FoursquareApiComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SitesMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SitesMap.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +22,7 @@
       <file leaf-file-name="SitesMapContainer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SitesMapContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
+            <state relative-caret-position="210">
               <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -40,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+            <state relative-caret-position="156">
+              <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -52,22 +55,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScriptCache.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/ScriptCache.js">
+      <file leaf-file-name="SitesMap.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SitesMap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+            <state relative-caret-position="409">
+              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoogleApiComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GoogleApiComponent.js">
+      <file leaf-file-name="SitesFilterList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SitesFilterList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="353">
+              <caret line="38" column="39" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="39" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,7 +91,7 @@
       <file leaf-file-name="InfoWindow.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InfoWindow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-71">
+            <state relative-caret-position="-277">
               <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
             </state>
           </provider>
@@ -103,8 +109,8 @@
       <file leaf-file-name="FoursquareApiComponent.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FoursquareApiComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="-203">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -112,8 +118,8 @@
       <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="143" column="1" lean-forward="true" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
+            <state relative-caret-position="662">
+              <caret line="142" column="1" lean-forward="true" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -178,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/SitesFilter.js" />
         <option value="$PROJECT_DIR$/src/Marker.js" />
         <option value="$PROJECT_DIR$/src/SitesFilterList.js" />
-        <option value="$PROJECT_DIR$/src/SitesMap.js" />
         <option value="$PROJECT_DIR$/src/InfoPanel.js" />
         <option value="$PROJECT_DIR$/src/reducer.js" />
         <option value="$PROJECT_DIR$/src/FoursquareApiComponint.js" />
@@ -187,9 +192,10 @@
         <option value="$PROJECT_DIR$/src/SitesFilterApp.js" />
         <option value="$PROJECT_DIR$/src/InfoWindow.js" />
         <option value="$PROJECT_DIR$/src/SitesMapContainer.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/FoursquareApiComponent.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/SitesMap.js" />
       </list>
     </option>
   </component>
@@ -288,18 +294,18 @@
       <workItem from="1530793315075" duration="8723000" />
       <workItem from="1531123544984" duration="12333000" />
       <workItem from="1531301629630" duration="16915000" />
-      <workItem from="1531322692210" duration="9262000" />
+      <workItem from="1531322692210" duration="10442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58125000" />
+    <option name="totallyTimeSpent" value="59305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.87841946" visible="true" weight="0.24960506" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.87841946" visible="true" weight="0.24960506" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -307,7 +313,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="4" side_tool="true" />
       <window_info id="Structure" order="1" sideWeight="0.12158055" side_tool="true" visible="true" weight="0.24960506" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3299389" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3299389" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -557,26 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SitesFilterList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SitesMap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MapWrapper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -640,16 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GoogleApiComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SitesFilterApp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
@@ -660,10 +636,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SitesMapContainer.js">
+    <entry file="file://$PROJECT_DIR$/src/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="201">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SitesFilterList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="38" column="39" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="39" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -672,36 +655,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="143" column="1" lean-forward="true" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
+        <state relative-caret-position="662">
+          <caret line="142" column="1" lean-forward="true" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/InfoWindow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
+        <state relative-caret-position="-277">
           <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FoursquareApiComponent.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SitesMapContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GoogleApiComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+        <state relative-caret-position="156">
+          <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SitesMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

@@ -35,8 +35,8 @@ export default class SitesMap extends React.Component {
       const mapRef = this.refs.map;
       const node = ReactDOM.findDOMNode(mapRef);
       let zoom = 15;
-      let lat = 41.40166;
-      let lng = 2.1566901;
+      let lat = 41.40366;
+      let lng = 2.1526901;
       const center = new maps.LatLng(lat, lng);
       const mapConfig = Object.assign({}, {
         center: center,

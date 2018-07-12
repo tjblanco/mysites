@@ -137,12 +137,16 @@ li:hover {
   background-color: #fffdd0;
   padding: 5px;
   border: 1px solid #d73027;
-  text-align: center;
-  line-height: 30px;
-  padding-left: 10px;
+  text-align: left;
+  font-size: 0.8em;
   /*display: none;*/
 }
-
+h3 {
+  margin: 0;
+}
+ol {
+  margin:0;
+}
 .show {
   display: block;
 }
