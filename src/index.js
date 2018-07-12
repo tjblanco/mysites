@@ -47,7 +47,7 @@ let features = [{
     },
     properties: {
         description: "Asian",
-        title: "Kibuka Sushi"
+        title: "Kibuka"
     }
 },{
     type: "Feature",
@@ -57,7 +57,7 @@ let features = [{
     },
     properties: {
         description: "Asian",
-        title: "Modu Korean Restaurant"
+        title: "Modu"
     }
 }, {
     type: "Feature",
@@ -67,7 +67,7 @@ let features = [{
     },
     properties: {
         description: "Cocktail Bar",
-        title: "Gràcia Latina"
+        title: "Gracia Latina"
     }
 }, {
     type: "Feature",
@@ -77,7 +77,7 @@ let features = [{
     },
     properties: {
         description: "Cocktail Bar",
-        title: "Chatelet"
+        title: "Chatelet Bar"
     }
 }, {
     type: "Feature",
@@ -87,7 +87,7 @@ let features = [{
     },
     properties: {
         description: "Burguer",
-        title: "La Vespa"
+        title: "La Vespa Burguer"
     }
 }, {
     description: "Feature",
@@ -107,7 +107,7 @@ let features = [{
     },
     properties: {
         description: "Tapas",
-        title: "La Terreta. Taverna Valenciana"
+        title: "La Terreta"
     }
 }, {
     description: "Feature",
@@ -127,7 +127,7 @@ let features = [{
     },
     properties: {
         description: "Tapas",
-        title: "Bar Canigó",
+        title: "Canigó",
     }
 }, {
     description: "Feature",
