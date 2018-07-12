@@ -139,7 +139,15 @@ li:hover {
   border: 1px solid #d73027;
   text-align: left;
   font-size: 0.8em;
-  /*display: none;*/
+  display: none;
+}
+.info li {
+  cursor: default;
+}
+.info li:hover {
+  color: black;
+  font-weight: 700;
+  font-weight: 200;
 }
 h3 {
   margin: 0;

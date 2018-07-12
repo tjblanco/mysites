@@ -44,12 +44,12 @@ class FoursquareApiComponent extends React.Component {
                     .then(res => res.json())
                     .then(
                         (result) => {
-                            console.log(result)
                             this.setState({
                                 prevMarker: this.props.marker,
                                 isLoaded: true,
                                 items: result.response.venues.filter((venue) => venue.name !== this.props.marker.get('title')).slice(0,4)
                             });
+                            this.openWindow()
                         },
                         // Note: it's important to handle errors here
                         // instead of a catch() block so that we don't swallow
@@ -65,6 +65,13 @@ class FoursquareApiComponent extends React.Component {
             }
         }
     }
+    closeWindow = () => {
+        document.getElementsByClassName('info')[0].classList.remove('show')
+    }
+    openWindow = () => {
+        document.getElementsByClassName('info')[0].classList.add('show')
+    }
+
 
     render() {
         const { error, isLoaded, items } = this.state;
@@ -75,12 +82,14 @@ class FoursquareApiComponent extends React.Component {
         } else {
             return (
                 <div className='info'>
+                    <button className="close" onClick={() => this.closeWindow()}>Close
+                    </button>
                     <h3>{this.props.marker.get('title')}</h3>
                     <p className="small">Near places:</p>
                     <ol>
                         {items.map(item => (
                             <li key={item.name}>
-                                {item.name} ({item.categories[0].name})
+                                {item.name} ({item.categories.length ? item.categories[0].name : 'Unkown'})
                             </li>
                         ))}
                     </ol>
