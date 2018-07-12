@@ -67,6 +67,9 @@ class FoursquareApiComponent extends React.Component {
     }
     closeWindow = () => {
         document.getElementsByClassName('info')[0].classList.remove('show')
+        this.props.marker.setIcon({
+            url: 'http://maps.google.com/mapfiles/marker.png'
+        })
     }
     openWindow = () => {
         document.getElementsByClassName('info')[0].classList.add('show')

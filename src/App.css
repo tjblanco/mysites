@@ -146,7 +146,6 @@ li:hover {
 }
 .info li:hover {
   color: black;
-  font-weight: 700;
   font-weight: 200;
 }
 h3 {
@@ -157,4 +156,10 @@ ol {
 }
 .show {
   display: block;
+}
+.close{
+  float: right;
+  background: #d73027;
+  color: white;
+  font-size: 1em;
 }
