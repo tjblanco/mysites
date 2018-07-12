@@ -156,9 +156,6 @@ h3 {
 ol {
   margin:0;
 }
-.show {
-  display: block;
-}
 .close{
   float: right;
   background: #d73027;

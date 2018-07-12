@@ -45,7 +45,12 @@ function changeFilter(state, filter) {
           const updatedMarker = updateMarker(state, markerIndex, mapOn)
           updatedMarkers = updatedMarkers.set(markerIndex, updatedMarker)
       })
-
+      if(state.get('activeMarker')){
+          document.getElementsByClassName('info')[0].style.display = 'none'
+          state.get('activeMarker').setIcon({
+              url: 'http://maps.google.com/mapfiles/marker.png'
+          })
+      }
       return state.merge(Map({
           'markers': updatedMarkers
       }))
@@ -56,6 +61,12 @@ function changeFilter(state, filter) {
           const updatedMarker = updateMarker(state, markerIndex, true)
           updatedMarkers = updatedMarkers.set(markerIndex, updatedMarker)
       })
+      if(state.get('activeMarker')){
+          document.getElementsByClassName('info')[0].style.display = 'none'
+          state.get('activeMarker').setIcon({
+              url: 'http://maps.google.com/mapfiles/marker.png'
+          })
+      }
       return state.merge(Map({
           'markers': updatedMarkers
       }))
