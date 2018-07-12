@@ -56,7 +56,7 @@ export default class SitesMap extends React.Component {
     }
     return (
       <div>
-        <div className='map' style={style} ref='map' >
+        <div className='map' style={style} ref='map' role="application" aria-label="Interactive map">
           {this.renderChildren()}
           Loading map...
         </div>

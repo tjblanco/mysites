@@ -1,7 +1,7 @@
 {
   "name": "react_redux_camping_filters",
   "version": "0.1.0",
-  "private": true,
+  "private": true
   "devDependencies": {
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.4",
@@ -9,6 +9,7 @@
     "babel-preset-react": "^6.5.0",
     "chai": "^3.5.0",
     "chai-immutable": "^1.6.0",
+    "gh-pages": "^1.2.0",
     "mocha": "^3.2.0",
     "react-redux": "^5.0.1",
     "react-scripts": "0.8.4",
