@@ -88,7 +88,7 @@ class FoursquareApiComponent extends React.Component {
                     <button className="close" onClick={() => this.closeWindow()}>Close
                     </button>
                     <h3>{this.props.marker.get('title')}</h3>
-                    <p className="small">Near places:</p>
+                    <p className="small">Near places from <a href='https://foursquare.com/' target="_blank">Foursquare</a>:</p>
                     <ol>
                         {items.map(item => (
                             <li key={item.name}>

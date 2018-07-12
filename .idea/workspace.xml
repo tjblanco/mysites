@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa22fa26-ccf7-41ad-99b0-474e032694a1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FoursquareApiComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FoursquareApiComponent.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,7 +31,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
+            <state relative-caret-position="1935">
               <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -75,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reducer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="422">
@@ -84,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FoursquareApiComponent.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FoursquareApiComponent.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FoursquareApiComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="71" column="10" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="71" selection-end-column="10" />
+            <state relative-caret-position="405">
+              <caret line="90" column="73" selection-start-line="90" selection-start-column="73" selection-end-line="90" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -188,12 +186,12 @@
         <option value="$PROJECT_DIR$/src/InfoWindow.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/SitesMapContainer.js" />
-        <option value="$PROJECT_DIR$/src/FoursquareApiComponent.js" />
         <option value="$PROJECT_DIR$/src/SitesMap.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/responsive.css" />
         <option value="$PROJECT_DIR$/src/reducer.js" />
+        <option value="$PROJECT_DIR$/src/FoursquareApiComponent.js" />
       </list>
     </option>
   </component>
@@ -286,12 +284,12 @@
       <workItem from="1530793315075" duration="8723000" />
       <workItem from="1531123544984" duration="12333000" />
       <workItem from="1531301629630" duration="16915000" />
-      <workItem from="1531322692210" duration="14553000" />
+      <workItem from="1531322692210" duration="14930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63416000" />
+    <option name="totallyTimeSpent" value="63793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -614,16 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SitesFilterList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
@@ -689,17 +677,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FoursquareApiComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="71" column="10" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="71" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
           <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1935">
+          <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FoursquareApiComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="90" column="73" selection-start-line="90" selection-start-column="73" selection-end-line="90" selection-end-column="73" />
         </state>
       </provider>
     </entry>
