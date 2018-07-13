@@ -44,6 +44,7 @@ function changeFilter(state, filter) {
               mapOn = true
           const updatedMarker = updateMarker(state, markerIndex, mapOn)
           updatedMarkers = updatedMarkers.set(markerIndex, updatedMarker)
+          return(null)
       })
       if(state.get('activeMarker')){
           document.getElementsByClassName('info')[0].style.display = 'none'
@@ -60,6 +61,7 @@ function changeFilter(state, filter) {
       markers.map((marker,markerIndex) => {
           const updatedMarker = updateMarker(state, markerIndex, true)
           updatedMarkers = updatedMarkers.set(markerIndex, updatedMarker)
+          return(null)
       })
       if(state.get('activeMarker')){
           document.getElementsByClassName('info')[0].style.display = 'none'

@@ -21,10 +21,10 @@ export class SitesFilterApp extends React.Component {
                 <img src={logo} className="App-logo" alt="logo" />
                 <h1 className="App-title">MySites in Gràcia</h1>
             </header>
-            <body>
+
             <SitesFilterList {...this.props}/>
             <SitesMapContainer {...this.props} />
-            </body>
+
         </div>
 
   )};

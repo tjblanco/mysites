@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './registerServiceWorker';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import reducer from './reducer'
 import {SitesFilterAppContainer} from './SitesFilterApp';
 import './index.css';
-import './indexController'
 
 const store = createStore(reducer)
 
@@ -24,6 +23,7 @@ function get_mysites(features) {
             mapOn: true
 
         })
+        return(null)
     });
     return mysites
 }
@@ -202,3 +202,4 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
+registerServiceWorker();

@@ -1,4 +1,4 @@
-import React, { PropTypes as T } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 
 import cache from './utils/ScriptCache'
@@ -21,12 +21,10 @@ export const wrapper = (options) => (WrappedComponent) => {
     }
 
     componentDidMount() {
+      window.gm_authFailure = this.gm_authFailure;
       const refs = this.refs;
       this.scriptCache.google.onLoad((err, tag) => {
         const maps = window.google.maps;
-        const props = Object.assign({}, this.props, {
-          loaded: this.state.loaded
-        });
 
         const mapRef = refs.map;
 
@@ -54,6 +52,10 @@ export const wrapper = (options) => (WrappedComponent) => {
           libraries: libraries
         })
       });
+    }
+
+    gm_authFailure() {
+          window.alert("Sorry, there is a Google Maps error!")
     }
 
     render() {

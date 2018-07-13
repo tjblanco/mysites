@@ -16,11 +16,11 @@ class FoursquareApiComponent extends React.Component {
 
         // document.querySelector('.info').classList.toggle('show')
         if(this.props.marker != null){
-            if(this.props.marker != this.state.prevMarker){
+            if(this.props.marker !== this.state.prevMarker){
                 const ll =  this.props.marker.get('position').lat() + ',' + this.props.marker.get('position').lng()
                 const apiKey = 'DCF32O5F4DN0GVATDUWSXTB1JHDNPHHTU5B4ED2MCPFQRJBU';
                 const client = 'R12ITUMGB3XSH03IIKLB0RYK23CYLAITKDBBMHZAGEQ445Z1';
-                const v = '20180711';
+                const v = '20180712';
                 const URL = 'https://api.foursquare.com/v2/venues/search';
 
 
@@ -44,22 +44,34 @@ class FoursquareApiComponent extends React.Component {
                     .then(res => res.json())
                     .then(
                         (result) => {
-                            this.setState({
-                                prevMarker: this.props.marker,
-                                isLoaded: true,
-                                items: result.response.venues.filter((venue) => venue.name !== this.props.marker.get('title')).slice(0,4)
-                            });
-                            this.openWindow()
+                            if(result.meta.code === 200){
+                                this.openWindow()
+                                this.setState({
+                                    prevMarker: this.props.marker,
+                                    isLoaded: true,
+                                    items: result.response.venues.filter((venue) => venue.name !== this.props.marker.get('title')).slice(0,4)
+                                });
+
+                            }else{
+                                this.openWindow()
+                                this.setState({
+                                    prevMarker: null,
+                                    isLoaded: true,
+                                    error: result.meta.errorDetail
+                                });
+                            }
                         },
                         // Note: it's important to handle errors here
                         // instead of a catch() block so that we don't swallow
                         // exceptions from actual bugs in components.
                         (error) => {
+                            this.openWindow()
                             this.setState({
                                 prevMarker: null,
                                 isLoaded: true,
                                 error
                             });
+
                         }
                     )
             }
@@ -79,9 +91,15 @@ class FoursquareApiComponent extends React.Component {
     render() {
         const { error, isLoaded, items } = this.state;
         if (error) {
-            return <div><p className="small">Sorry, we couldn't get the info. Error: {error.message}</p></div>;
+            return <div className='info'>
+                <button className="close" onClick={() => this.closeWindow()}>Close</button>
+                <p className="small">Sorry, we couldn't get the info. Error: {error.message ? error.message : error}</p>
+            </div>;
         } else if (!isLoaded) {
-            return <div>Loading...</div>;
+            return <div className='info'>
+                <button className="close" onClick={() => this.closeWindow()}>Close</button>
+                <p className="small">Loading...</p>
+            </div>;
         } else {
             return (
                 <div className='info'>
