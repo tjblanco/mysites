@@ -17,7 +17,7 @@ Please, clone or download the project in your computer.
 * Install all project dependencies with `npm install`
 * Start the server with `npm start` 
 
-## How to run the production server
+## How to run the production App
 
 If you want to take advantage of the ServiceWorker, build the production app and run it locally:
 
