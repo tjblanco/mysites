@@ -166,3 +166,7 @@ ol {
   color: white;
   font-size: 1em;
 }
+.error {
+  text-align: left;
+  font-weight: 100;
+}

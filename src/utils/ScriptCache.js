@@ -11,9 +11,11 @@ export const ScriptCache = (function(global) {
         if (stored) {
           stored.promise.then(() => {
             stored.error ? cb(stored.error) : cb(null, stored)
+          }).catch((e)=>{
+            console.log(e)
+              document.querySelector('.nav_panel').style.display = 'none'
+              document.querySelector('.map').innerHTML = '<h2 class="error">Sorry, we cannot load Google Maps</h2>'
           })
-        } else {
-          // TODO:
         }
       }
     }
