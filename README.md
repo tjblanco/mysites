@@ -17,6 +17,17 @@ Please, clone or download the project in your computer.
 * Install all project dependencies with `npm install`
 * Start the server with `npm start` 
 
+## How to run the production server
+
+If you want to take advantage of the ServiceWorker, build the production app and run it locally:
+
+```
+ npm run build
+ npm install -g pushstate-server
+ pushstate-server build
+ open http://localhost:9000
+```
+
 ## Dependencies
 
 * Immutable (3.8.1)

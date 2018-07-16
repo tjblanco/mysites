@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa22fa26-ccf7-41ad-99b0-474e032694a1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/GoogleApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/GoogleApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/ScriptCache.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ScriptCache.js" afterDir="false" />
-    </list>
+    <list default="true" id="aa22fa26-ccf7-41ad-99b0-474e032694a1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -22,19 +18,7 @@
         <entry file="file://$PROJECT_DIR$/src/SitesFilterApp.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="155">
-              <caret line="18" column="83" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="83" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2535">
-              <caret line="177" column="15" selection-start-line="177" selection-start-column="15" selection-end-line="177" selection-end-column="15" />
+              <caret line="18" column="83" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="83" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -64,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/src/FoursquareApiComponent.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1290">
-              <caret line="86" column="74" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="74" />
+              <caret line="86" column="74" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -74,20 +58,29 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="ScriptCache.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScriptCache.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/ScriptCache.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
+            <state relative-caret-position="210">
+              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoogleApi.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="170" column="19" selection-start-line="170" selection-start-column="19" selection-end-line="170" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoogleApi.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/GoogleApi.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -179,7 +172,6 @@
         <option value="$PROJECT_DIR$/src/SitesMapContainer.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/responsive.css" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/App.test.js" />
         <option value="$PROJECT_DIR$/src/registerServiceWorker.js" />
         <option value="$PROJECT_DIR$/src/sw.js" />
@@ -194,8 +186,9 @@
         <option value="$PROJECT_DIR$/src/reducer.js" />
         <option value="$PROJECT_DIR$/src/GoogleApiComponent.js" />
         <option value="$PROJECT_DIR$/src/FoursquareApiComponent.js" />
-        <option value="$PROJECT_DIR$/src/utils/GoogleApi.js" />
         <option value="$PROJECT_DIR$/src/utils/ScriptCache.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/utils/GoogleApi.js" />
       </list>
     </option>
   </component>
@@ -303,18 +296,17 @@
       <workItem from="1531322692210" duration="14930000" />
       <workItem from="1531464962241" duration="182000" />
       <workItem from="1531483176302" duration="3613000" />
-      <workItem from="1531723711052" duration="875000" />
+      <workItem from="1531723711052" duration="1236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75600000" />
+    <option name="totallyTimeSpent" value="75961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8738602" visible="true" weight="0.24960506" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8738602" visible="true" weight="0.24960506" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -322,7 +314,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3299389" />
       <window_info id="npm" order="4" side_tool="true" />
       <window_info id="Structure" order="1" sideWeight="0.12613982" side_tool="true" visible="true" weight="0.24960506" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3299389" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3299389" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -444,13 +436,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/FoursquareApi.js" />
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="78" column="18" lean-forward="true" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -523,7 +508,7 @@
     <entry file="file://$PROJECT_DIR$/src/SitesFilterApp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
-          <caret line="18" column="83" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="83" />
+          <caret line="18" column="83" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="83" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -557,21 +542,28 @@
     <entry file="file://$PROJECT_DIR$/src/FoursquareApiComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1290">
-          <caret line="86" column="74" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="74" />
+          <caret line="86" column="74" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="170" column="19" selection-start-line="170" selection-start-column="19" selection-end-line="170" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/ScriptCache.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/GoogleApi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/ScriptCache.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
         </state>
       </provider>
     </entry>
